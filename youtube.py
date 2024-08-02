@@ -9,10 +9,10 @@ import csv
 
 
 # Put in your personal API key into the variable below
-api_key = "AIzaSyA46c0QtxKfLhqiXWam5yP9CsIPcHjyGaw"
+api_key = "Enter your own API key"
 
 # directory/file path for the content of vidoes in my watch later playlist
-Watch_later_csv_file = "D:/Users/Bienwi-Patrick Ledum/Documents/Personal python path/Projects/playlists/Watch later videos.csv"
+Watch_later_csv_file = "D:/Users/your/path/for your/watchlater/playlist/on/your computer"
 
 youtube = build('youtube', 'v3', developerKey=api_key)
 
