@@ -8,7 +8,7 @@ import csv
 
 
 # file path where the details for each video will be stored
-video_data = "D:/Users/Bienwi-Patrick Ledum/Documents/Personal python path/Projects/my_data.csv"
+video_data = "D:/Users/csv file path/to store/video details"
 
 with open(video_data, "w") as csv_file:
     fields = ["id", "duration", "viewCount"]
