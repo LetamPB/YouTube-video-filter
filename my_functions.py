@@ -1,6 +1,6 @@
 import re
-
-
+# Adapted from code provided by Corey Shafer on GitHub
+#source: https://github.com/CoreyMSchafer/code_snippets/blob/master/Python/YouTube-API/02-Playlist-Duration/playlist.py
 def iso_duration_to_seconds(duration):
     """
     Converts an ISO duration string to seconds.
