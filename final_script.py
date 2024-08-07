@@ -3,12 +3,13 @@ from my_functions import to_seconds
 
 # represents the path where we wrote our video details into
 # using the same variable name from youtwo.py
-video_data = "D:/Users/Bienwi-Patrick Ledum/Documents/Personal python path/Projects/my_data.csv"
+video_data = D:/Users/csv file path/to store/video details"
+
 print("Hello, to use, you'll be asked how long you want the video to be ")
 print()
 
 min_minutes = to_seconds(int(input(
-    "Enter the minimum number of minutes for the video you want to watch\n i.e 5 reprsenting 5 minutes"
+    "Enter the minimum number of minutes for the video you want to watch\n i.e 5 representing 5 minutes"
     "\n please enter only the number ")))
 max_minutes = to_seconds(
     int(input("Enter the max number of minutes per video ")))
