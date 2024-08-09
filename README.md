@@ -15,7 +15,9 @@ final_script.py
 
 Prerequisites
 1. Google API Key Setup
+   
 Before running the scripts, you need to obtain a Google API key. Follow these steps:
+
 1.	Go to the Google Developers Console.
 2.	Create a new project.
 3.	Enable the YouTube Data API v3.
@@ -23,6 +25,7 @@ Before running the scripts, you need to obtain a Google API key. Follow these st
 o	Choose "Other non-UI" for the application type.
 o	Select "Public data" for the access level.
 5.	Copy the API key and store it securely.
+6.	
 2. Google Takeout
 Since the YouTube API does not provide access to the "Watch Later" playlist, you'll need to use Google Takeout to export your playlist data.
 1.	Visit Google Takeout.
@@ -33,10 +36,12 @@ Since the YouTube API does not provide access to the "Watch Later" playlist, you
 Setting Up the Project
 1. Organizing Files
 •	Create a new folder on your computer for this project.
+
 •	Place all four Python scripts (youtube.py, youtwo.py, my_functions.py, and final_script.py) in this folder.
+
 •	Move the Google Takeout data folder into the project directory.
 
-2. Setting Up a Virtual Environment
+3. Setting Up a Virtual Environment
 It's recommended to use a virtual environment to manage dependencies.
 1.	Install venv if you don't have it: pip install venv
 2.	Create a virtual environment: python - m venv name_of_environment
@@ -52,15 +57,20 @@ Script Descriptions and Execution
 1. youtube.py
 Purpose: This script retrieves video details from your "Watch Later" playlist using the YouTube API.
 Setup:
+
 •	Enter your API key in the api_key variable within the script.
 •	Specify the file path of the CSV file containing video IDs in the Watch_later_csv_file variable.
+
 Execution:
 •	Run the script to fetch video details. The output will be a list of dictionaries containing details for each video in your playlist.
 •	You can verify the success by printing video_details.
+
 Troubleshooting:
 •	If you encounter issues with the API call, ensure that your API key is correct and that the required modules are installed.
-2. youtwo.py
+
+3. youtwo.py
 Purpose: This script stores the data retrieved from the API into a CSV file for further analysis.
+
 Setup:
 •	Create a CSV file within your project folder where the video data will be stored.
 •	Update the video_data variable with the file path of the CSV file.
@@ -68,13 +78,14 @@ Execution:
 •	Run the script to store the video data in the CSV file.
 •	Check the CSV file to ensure it has been populated with the correct data.
 
-3. my_functions.py
+5. my_functions.py
 Purpose: This script contains utility functions that are used by the other scripts. It may include functions for data processing, filtering, and more.
 Note:
 •	You don’t need to run this script directly; it will be used by youtube.py, youtwo.py, and final_script.py as needed.
 
 
-4. final_script.py
+6. final_script.py
+   
 Purpose: This is the final script that curates the list of 10 YouTube video links based on your preferred duration.
 Execution:
 •	Run the script after youtube.py and youtwo.py have successfully completed.
